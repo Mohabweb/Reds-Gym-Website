@@ -1,0 +1,387 @@
+Build a modern, professional, responsive website for a local gym called "Reds Gym" in Alexandria, Egypt.
+
+IMPORTANT:
+This is a real local business website concept that will be presented to the gym owner as a professional demo.
+Keep the website simple, polished, fast, and easy to navigate.
+Do NOT overcomplicate it.
+Do NOT build a dashboard, login system, membership management system, payment system, or complex backend.
+
+BUSINESS INFORMATION:
+
+Gym Name:
+Reds Gym
+
+Location:
+السيوف شماعة - شارع جميلة أبو حريد - برج الرعايا
+أمام صيدلية القبرصي
+فوق ريش نعام وقصر المحروسة للموبيليا
+Alexandria, Egypt
+
+Email:
+redsgym.0@gmail.com
+
+Phone:
++20 10 07777134
+
+TikTok:
+https://www.tiktok.com/@reds6897
+
+DESIGN DIRECTION:
+
+The main visual identity must be RED + BLACK.
+
+Use:
+- Deep/dark black as the main background
+- Strong red as the primary accent color
+- White/light gray for readable text
+- Modern athletic typography
+- Bold headings
+- Strong visual hierarchy
+- Clean spacing
+- Subtle animations
+- Modern cards
+- High-quality image presentation
+
+The design should feel:
+- Strong
+- Energetic
+- Professional
+- Masculine
+- Premium but affordable
+- Like a real modern gym website
+
+Avoid:
+- Excessive gradients
+- Too many animations
+- Overly complicated layouts
+- Generic corporate design
+- Stock photography if real gym photos are provided
+- Huge amounts of text
+
+USE THE GYM PHOTOS I PROVIDE:
+I will upload real photos of Reds Gym.
+
+Use those photos throughout the website.
+Do not replace them with random stock gym images.
+Choose the best photos for the hero section, gallery, and other sections.
+Crop them intelligently and preserve their important content.
+
+WEBSITE STRUCTURE:
+
+1. NAVBAR
+
+Create a clean sticky navbar.
+
+Logo:
+Reds Gym
+
+Navigation:
+- Home
+- About
+- Services
+- Gallery
+- Location
+- Contact
+
+Add a prominent red CTA button:
+"Join Us"
+
+On mobile:
+Use a clean hamburger menu.
+
+--------------------------------------------------
+
+2. HERO SECTION
+
+Create a powerful full-screen or near-full-screen hero section.
+
+Use one of the best gym photos as the background.
+
+Add a dark overlay so text remains readable.
+
+Main heading:
+
+"TRAIN HARD.
+STAY STRONG."
+
+or another short powerful gym-focused headline.
+
+Supporting text:
+
+"Your local fitness destination in Alexandria."
+
+Add two buttons:
+
+Primary:
+"Join Reds Gym"
+
+Secondary:
+"View Location"
+
+The buttons should smoothly scroll to the relevant sections.
+
+Include a small visual indicator that the page can be scrolled.
+
+--------------------------------------------------
+
+3. ABOUT REDS GYM
+
+Create a simple About section.
+
+Heading:
+"ABOUT REDS GYM"
+
+Explain briefly that Reds Gym is a local fitness gym in Alexandria focused on helping members train consistently, improve their fitness, and reach their goals.
+
+Keep the copy short.
+Do not invent specific claims such as:
+- number of years in business
+- number of members
+- certifications
+- professional trainers
+- 24/7 opening hours
+- special equipment
+unless that information is explicitly provided.
+
+Use one or two real gym photos beside the text.
+
+--------------------------------------------------
+
+4. WHY REDS GYM
+
+Create a simple 3 or 4-card section.
+
+Possible cards:
+
+"Train Hard"
+"Build Strength"
+"Stay Consistent"
+"Reach Your Goals"
+
+Use simple icons.
+
+Keep the section visually clean.
+
+Do not make fake statistics.
+
+--------------------------------------------------
+
+5. SERVICES / TRAINING
+
+Create a section titled:
+
+"WHAT WE OFFER"
+
+Use cards for general gym offerings such as:
+
+- Strength Training
+- Cardio
+- Fitness Training
+- Free Weights
+
+IMPORTANT:
+Only present these as general gym facilities/services.
+Do not claim that Reds Gym definitely offers a specific service unless it can reasonably be inferred from the photos or information provided.
+
+Make the cards visually attractive but simple.
+
+--------------------------------------------------
+
+6. GALLERY
+
+Create a modern image gallery using the real photos I provide.
+
+Use:
+- Responsive grid
+- Different image sizes
+- Hover effects
+- Dark styling
+- Red accents
+
+Clicking an image can open a simple lightbox/modal.
+
+The gallery should be one of the strongest visual sections of the website.
+
+--------------------------------------------------
+
+7. CALL TO ACTION
+
+Create a strong red/black CTA section.
+
+Heading:
+
+"READY TO START TRAINING?"
+
+Text:
+
+"Come visit Reds Gym and start working toward your fitness goals."
+
+Button:
+
+"Contact Reds Gym"
+
+The button should scroll to the contact section.
+
+--------------------------------------------------
+
+8. LOCATION
+
+Create a location section.
+
+Display the address clearly:
+
+السيوف شماعة - شارع جميلة أبو حريد
+برج الرعايا
+أمام صيدلية القبرصي
+فوق ريش نعام وقصر المحروسة للموبيليا
+Alexandria, Egypt
+
+Add a Google Maps-style embedded map if possible.
+
+If an exact map embed cannot be created without coordinates, create a professional location card with a button:
+
+"Open in Google Maps"
+
+Do not invent exact coordinates.
+
+--------------------------------------------------
+
+9. CONTACT
+
+Create a clean contact section.
+
+Display:
+
+Phone:
++20 10 07777134
+
+Email:
+redsgym.0@gmail.com
+
+TikTok:
+@reds6897
+
+Use clickable links:
+
+tel:+201007777134
+mailto:redsgym.0@gmail.com
+https://www.tiktok.com/@reds6897
+
+Add a large red button:
+
+"Call Reds Gym"
+
+On mobile this should open the phone dialer.
+
+--------------------------------------------------
+
+10. FOOTER
+
+Create a simple professional footer.
+
+Include:
+
+Reds Gym
+
+"Train Hard. Stay Strong."
+
+Phone
+Email
+TikTok
+
+Location
+
+Copyright:
+© 2026 Reds Gym. All rights reserved.
+
+--------------------------------------------------
+
+RESPONSIVENESS:
+
+The website MUST be fully responsive.
+
+Desktop:
+- Wide modern layout
+- Large hero
+- Image/text split sections
+- Professional spacing
+
+Tablet:
+- Adjust spacing and typography
+
+Mobile:
+- Single-column layouts
+- Mobile navigation
+- Large readable buttons
+- Images should fit properly
+- No horizontal scrolling
+- Phone CTA should be easy to access
+
+--------------------------------------------------
+
+ANIMATIONS:
+
+Use subtle modern animations only.
+
+Examples:
+- Fade-in on scroll
+- Slight image zoom on hover
+- Button hover effects
+- Smooth scrolling
+- Navbar transition
+
+Keep animations fast and professional.
+
+Do not overuse animations.
+
+--------------------------------------------------
+
+TECHNICAL REQUIREMENTS:
+
+Use a clean modern frontend architecture.
+
+Prefer:
+- React
+- CSS / Tailwind if appropriate
+- Lucide icons or another lightweight icon library
+
+Make the code:
+- Clean
+- Organized
+- Reusable
+- Easy to modify
+- Production-ready
+
+Optimize images and performance as much as possible.
+
+Use semantic HTML and proper accessibility practices.
+
+Add:
+- Proper page title
+- Meta description
+- Open Graph metadata
+- Descriptive image alt text
+- Mobile viewport
+- Good heading hierarchy
+
+SEO title suggestion:
+
+"Reds Gym | Fitness Gym in Alexandria, Egypt"
+
+SEO description:
+
+"Reds Gym is a local fitness gym in Alexandria, Egypt. Visit us in Syouf Shamaa and start your fitness journey."
+
+IMPORTANT FINAL REQUIREMENT:
+
+Before finishing:
+1. Check the entire website for broken links.
+2. Check mobile responsiveness.
+3. Check that all buttons work.
+4. Check that phone/email/TikTok links work.
+5. Check that images load correctly.
+6. Make sure there are no placeholder texts.
+7. Make sure there are no fake business claims.
+8. Make sure there is no lorem ipsum.
+9. Make sure the website looks like a real professional gym website rather than an AI-generated template.
+10. Keep the final design simple, premium, and visually strong.

@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Reds Gym Website"
+description = "A responsive one-page marketing website for Reds Gym in Alexandria, Egypt, using the gym's real photography with clear contact, location, services, and gallery experiences."
+version = "1.0.0"
+id = "artifacts/reds-gym-website"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23488
+
+[services.development]
+run = "pnpm --filter @workspace/reds-gym-website run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/reds-gym-website", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/reds-gym-website/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23488"
+BASE_PATH = "/"
