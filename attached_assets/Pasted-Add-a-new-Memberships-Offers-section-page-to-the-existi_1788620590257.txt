@@ -1,0 +1,138 @@
+Add a new "Memberships & Offers" section/page to the existing Reds Gym website.
+
+IMPORTANT:
+Keep the existing website design and RED + BLACK visual identity.
+Do not rebuild the website from scratch.
+Keep the page simple, modern, premium, and highly readable.
+
+PAGE TITLE:
+"اختر اشتراكك"
+
+SUBTITLE:
+"اختار الباقة اللي تناسبك وابدأ دلوقتي 🔥"
+
+MEMBERSHIP PLANS:
+
+1. Monthly
+مدة الاشتراك:
+شهر
+
+السعر:
+500 جنيه
+
+2. 2 Months
+مدة الاشتراك:
+شهرين
+
+السعر:
+800 جنيه
+
+Add a small badge:
+"عرض"
+
+3. 3 Months
+مدة الاشتراك:
+3 شهور
+
+السعر:
+1,200 جنيه
+
+Add a small badge:
+"عرض"
+
+4. 6 Months
+مدة الاشتراك:
+6 شهور
+
+السعر:
+1,800 جنيه
+
+Make this card visually stand out as:
+"أفضل قيمة"
+
+FRIENDS OFFER:
+
+Create a separate, visually prominent offer card.
+
+Title:
+"عرض الصحاب 👯‍♀️"
+
+Main text:
+"هات 3 من صحابك واشتركوا مع بعض"
+
+Price:
+"450 جنيه للفرد"
+
+Supporting text:
+"بدل 500 جنيه"
+
+Add a visually noticeable badge:
+"عرض خاص 🔥"
+
+LIMITED-TIME MESSAGE:
+
+"العرض لفترة محدودة… الحق مكانك ⏳"
+
+CTA:
+
+Add a large red button:
+"اشترك الآن"
+
+The CTA should open WhatsApp or initiate a phone call using the gym's verified contact information.
+
+Do NOT create an online payment system.
+
+IMPORTANT:
+Do not invent additional membership benefits, services, discounts, conditions, or rules that were not provided.
+
+DESIGN:
+
+- Black/dark background
+- Reds Gym red accent color
+- White typography
+- Large prices
+- Strong visual hierarchy
+- Modern cards
+- Subtle borders/glows
+- Very subtle hover animations
+- Mobile-first responsive layout
+- Make the prices immediately visible
+- Keep the page uncluttered
+- Use Arabic correctly with RTL layout
+
+ARABIC SUPPORT:
+
+The entire page must support RTL properly.
+
+Use:
+dir="rtl"
+
+Make sure Arabic text is displayed naturally and does not look like a translated template.
+
+MOBILE:
+
+On mobile:
+- Stack the membership cards vertically
+- Make prices large and readable
+- Make the CTA button easy to tap
+- Keep the friends offer prominent
+- Avoid horizontal scrolling
+
+NAVIGATION:
+
+Add the new page/section to the existing navigation as:
+
+"الاشتراكات"
+
+Make sure the navigation link works correctly.
+
+FINAL CHECK:
+
+- No lorem ipsum
+- No placeholder text
+- No fake offers
+- No invented information
+- Verify all buttons work
+- Verify RTL layout
+- Verify mobile responsiveness
+- Keep the existing website unchanged except for the required additions.

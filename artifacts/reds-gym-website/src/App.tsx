@@ -1,7 +1,7 @@
 import { type ReactNode, useEffect, useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { Activity, ArrowDownRight, ArrowRight, CircleDot, Clock3, Dumbbell, Expand, ExternalLink, Mail, MapPin, Menu, Navigation, Phone, X, Zap } from 'lucide-react';
-import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
+import { Activity, ArrowDownRight, ArrowLeft, ArrowRight, CircleDot, Clock3, Dumbbell, Expand, ExternalLink, Mail, MapPin, Menu, Navigation, Phone, X, Zap } from 'lucide-react';
+import { Link, Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
@@ -62,6 +62,7 @@ function Header() {
           <a href="#training" onClick={() => setOpen(false)} data-testid="link-training">Training</a>
           <a href="#gallery" onClick={() => setOpen(false)} data-testid="link-gallery">Gallery</a>
           <a href="#contact" onClick={() => setOpen(false)} data-testid="link-contact">Find us</a>
+          <Link href="/memberships" onClick={() => setOpen(false)} data-testid="link-memberships">الاشتراكات</Link>
         </nav>
         <a className="header-cta" href="tel:+201007777134" data-testid="link-header-call">Call the gym</a>
         <button className="menu-button" type="button" onClick={() => setOpen((value) => !value)} aria-label={open ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={open} data-testid="button-mobile-menu">
@@ -251,6 +252,122 @@ function Footer() {
   );
 }
 
+type MembershipPlan = {
+  name: string;
+  duration: string;
+  price: string;
+  badge?: string;
+  featured?: boolean;
+};
+
+const membershipPlans: MembershipPlan[] = [
+  { name: 'شهري', duration: 'شهر', price: '500' },
+  { name: 'شهرين', duration: 'شهرين', price: '800', badge: 'عرض' },
+  { name: '3 شهور', duration: '3 شهور', price: '1,200', badge: 'عرض' },
+  { name: '6 شهور', duration: '6 شهور', price: '1,800', badge: 'أفضل قيمة', featured: true },
+];
+
+function MembershipsHeader() {
+  return (
+    <header className="site-header membership-header" data-testid="memberships-header">
+      <div className="header-inner">
+        <Link className="brand" href="/" data-testid="link-memberships-brand" aria-label="Reds Gym home">
+          <span className="brand-mark" aria-hidden="true" />
+          <span>
+            <span className="brand-name"><span>R</span>EDS GYM</span>
+            <span className="brand-sub">Transform your life</span>
+          </span>
+        </Link>
+        <nav className="nav-links membership-nav" aria-label="التنقل الرئيسي">
+          <Link href="/" data-testid="link-memberships-home">الرئيسية</Link>
+          <Link href="/#about" data-testid="link-memberships-about">عن Reds Gym</Link>
+          <Link href="/#contact" data-testid="link-memberships-contact">تواصل معنا</Link>
+        </nav>
+        <a className="header-cta membership-header-cta" href="https://wa.me/201007777134?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%D8%A7%D8%AA" target="_blank" rel="noreferrer" data-testid="link-memberships-header-whatsapp">اشترك الآن</a>
+      </div>
+    </header>
+  );
+}
+
+function Memberships() {
+  useEffect(() => {
+    const previousDirection = document.documentElement.dir;
+    const previousLanguage = document.documentElement.lang;
+    const previousTitle = document.title;
+    document.documentElement.dir = 'rtl';
+    document.documentElement.lang = 'ar';
+    document.title = 'الاشتراكات | Reds Gym';
+    return () => {
+      document.documentElement.dir = previousDirection;
+      document.documentElement.lang = previousLanguage;
+      document.title = previousTitle;
+    };
+  }, []);
+
+  const whatsappUrl = 'https://wa.me/201007777134?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20Reds%20Gym';
+
+  return (
+    <div className="membership-page" dir="rtl" lang="ar" data-testid="page-memberships">
+      <div className="noise" aria-hidden="true" />
+      <MembershipsHeader />
+      <main className="membership-main">
+        <section className="membership-hero" aria-labelledby="memberships-title">
+          <div className="membership-shell">
+            <div className="membership-kicker">Reds Gym / Alexandria</div>
+            <h1 id="memberships-title">اختر اشتراكك</h1>
+            <p>اختار الباقة اللي تناسبك وابدأ دلوقتي 🔥</p>
+          </div>
+        </section>
+
+        <section className="membership-plans membership-shell" aria-labelledby="plans-title">
+          <div className="membership-section-heading">
+            <span>01 / الباقات</span>
+            <h2 id="plans-title">ابدأ من <strong>دلوقتي.</strong></h2>
+          </div>
+          <div className="plans-grid">
+            {membershipPlans.map((plan, index) => (
+              <article className={`plan-card${plan.featured ? ' featured' : ''}`} key={plan.name} data-testid={`card-membership-plan-${index + 1}`}>
+                {plan.badge && <span className="plan-badge" data-testid={`badge-membership-plan-${index + 1}`}>{plan.badge}</span>}
+                <div className="plan-number">0{index + 1}</div>
+                <h3>{plan.name}</h3>
+                <div className="plan-duration">{plan.duration}</div>
+                <div className="plan-price"><span>{plan.price}</span> جنيه</div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="friends-offer membership-shell" aria-labelledby="friends-offer-title">
+          <div className="friends-offer-card">
+            <div className="friends-offer-badge">عرض خاص 🔥</div>
+            <div className="friends-offer-copy">
+              <div className="membership-kicker">02 / الصحاب</div>
+              <h2 id="friends-offer-title">عرض الصحاب 👯‍♀️</h2>
+              <p className="friends-offer-main">هات 3 من صحابك واشتركوا مع بعض</p>
+              <p className="friends-offer-note">بدل 500 جنيه</p>
+            </div>
+            <div className="friends-offer-price"><span>450</span><small>جنيه للفرد</small></div>
+          </div>
+        </section>
+
+        <section className="membership-cta membership-shell" aria-labelledby="membership-cta-title">
+          <div>
+            <div className="membership-kicker">03 / مستني إيه؟</div>
+            <h2 id="membership-cta-title">العرض لفترة محدودة…<br /><strong>الحق مكانك ⏳</strong></h2>
+          </div>
+          <a className="membership-button" href={whatsappUrl} target="_blank" rel="noreferrer" data-testid="button-membership-whatsapp">اشترك الآن <ArrowLeft size={18} /></a>
+        </section>
+      </main>
+      <footer className="membership-footer">
+        <div className="membership-shell membership-footer-inner">
+          <span>© {new Date().getFullYear()} Reds Gym / Alexandria, Egypt</span>
+          <a href="tel:+201007777134" data-testid="link-memberships-phone">+20 10 07777134</a>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
 function Home() {
   return (
     <div className="min-h-[100dvh]" data-testid="page-home">
@@ -273,6 +390,7 @@ function Router() {
     <RoutedErrorBoundary>
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/memberships" component={Memberships} />
         <Route component={NotFound} />
       </Switch>
     </RoutedErrorBoundary>
